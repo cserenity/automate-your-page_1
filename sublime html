@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+<title>Crystal's notes</title>
+  <link rel="stylesheet" type="test/css" href="style.css">
+  </head>
+<body>
+  <div class="TOC">
+    <h1>Table of Contents</h1>
+    <ol>
+      <li><a href="#lesson-1">Lesson 1: Basics of HTML</a>
+        <ul>
+          <li><a href="#lesson-1-1">The WWW</a></li>
+          <li><a href="#lesson-1-2">HTML</a></li>
+          <li><a href="#lesson-1-3">Key Point</a></li>
+        </ul>
+      </li>
+      <li><a href="#lesson-2">Lesson 2: Creating Structured Documents Using HTML</a>
+        <ul>
+          <li><a href="#lesson-2-1">HTML Structure</a></li>
+          <li><a href="#lesson-2-2">DOM</a></li> 
+          <li><a href="#lesson-2-3">CSS</a></li>
+          <li><a href="#lesson-2-4">Key Point</a></li>
+        </ul>
+       <li><a href="#lesson-3">Lesson 3: Adding CSS Style to HTML Structure</a>
+         <ul>
+           <li><a href="#lesson-3-1">Spaces Matter</a></li>
+           <li><a href="#lesson-3-2">Search and Replace</a></li>
+           <li><a href="#lesson-3-3">Order Matters</a></li>
+           <li><a href="#lesson-3-4">Specifics Matter</a></li>
+           <li><a href="#lesson-3-5">Repetition</a></li>
+           <li><a href="#lesson-3-6">Code, Test, Refine</a></li>
+           <li><a href="#lesson-3-7">It's All About the Box</a></li>
+           <li><a href="#lesson-3-8">Check Your Work</a></li>
+         </ul>
+      <li><a href="#lesson-4">Lesson 4: Introduction to Serious Programming</a> 
+        <ul>
+          <li><a href="#lesson-4-1">Telling Computers What to Do</a></li>
+          <li><a href="#lesson-4-2">Thinking like a Programmer</a></li>
+          <li><a href="#lesson-4-3">Python</a></li>
+          <li><a href="#lesson-4-4">Computer Programming</a></li>
+          <li><a href="#lesson-4-5">Variables in Python</a></li>
+          <li><a href="#lesson-4-6">Strings in Python</a></li>
+          <li><a href="#lesson-4-7">Indexing Strings</a></li>
+          <li><a href="#lesson-4-8">Finding Strings in Strings</a></li>
+          <li><a href="#lesson-4-9">Decisions and Repetitions</a></li>
+          <li><a href="#lesson-4-10">If and While</a></li>
+          <li><a href="#lesson-4-11">Equality Comparisions</a></li>
+          <li><a href="#lesson-4-12">Loops</a></li>
+          <li><a href="#lesson-4-13">Debugging Strategy</a></li>
+        </ul>
+      </li>  
+      </ol>
+    </div>
+ <!--creating a div for each lesson -->
+  <div> <h1>Learning to Code</h1> </div>
+  
+<div class="lesson">
+   <h2 id="lesson-1">Lesson 1: Basics of HTML</h2> 
+</div>
+
+<div class="concept" id="lesson-1-1">
+   The WWW
+</div>
+  
+<div class="concept-brief">
+   The Nuts and Bolts
+</div>
+
+<br>
+
+<div class="concept-description">
+ <p>Basic components comprising the web are: HTML, URLS, HTTP and Web Apps.  HTML is a hypertext markup language and is the main type of document on the web. Types of files found on web include; plain text, images, videos and music.</p>
+</div>
+
+<br>
+
+<div class="concept" id="lesson-1-2">
+ HTML
+</div>
+  
+<div class="concept-brief">
+ HTML is made up of tags and elements.
+</div>
+
+<br>
+
+<div class="concept-description">
+ <p>There are several types of tags, the most important thing to remember about different types of tags is that they do not have to be remembered! <a href="www.google.com">Google</a> is your friend for finding a tag that you have forgotten.  Elements usually have an opening and closing tag, however some tags do not require a closing tag.  A tag that does not need a closing tag is called a void tag.  A couple of examples of void tags are the image tag, &lt;img&gt;, and the break tag &lt;br&gt;.  I just used <a href="www.google.com">Google</a> to figure out how to show tags in text ;)!  Multiple tags can be nested.</p>
+</div>
+
+<br>
+  
+<div class="concept-brief">
+  White Space
+</div>
+
+<br>
+
+<div class="concept-description">
+  <p>White space can be achieved using the &lt;br&gt; and &lt;p&gt; tags.  The &lt;br&gt; is an inline tag and needs no closing tag. The &lt;p&gt; tag is a block tag and requires closing tag &lt;/p&gt;.</p> 
+</div>
+
+<br>
+ 
+<div class="concept" id="lesson-1-3">
+  Key point
+  </div>
+
+<div class="concept-brief">
+  Computers are stupid
+</div>
+
+<br>
+
+<div class="concept-description">
+ <p>Computers will do exactly what I tell them to do, as long as I am speaking their language!
+    While learning to code may not be as much fun as learning Italian, it will be much more useful for the long haul. </p> 
+ </div>
+  <!--Stage 1 work session 1 notes -->
+ <div>
+  <div class="lesson">
+    <h3 id="lesson-2">Lesson 2: Creating structured documents using HTML</h3>
+  </div>
+  <div class="concept" id="lesson-2-1"> 
+   HTML Structure
+   </div>
+  </div>
+ <div class="concept-brief">
+   HTML is the language of the web; syntax and rules
+</div>
+
+<br>
+
+<div class="concept-description">
+  <p>HTML elements are always rectangular even if they do not appear that way.  Thinking of text in terms of boxes will help with web planning.  HTML boxifys the web.  These boxes are defined by the  &lt;div&gt; tag.  Each box starts with &lt;div&gt; and ends with &lt;/div&gt;.</p>
+</div>
+
+<br>
+
+<div class="concept" id="lesson-2-2">
+ DOM
+</div>
+
+ <div class="concept-brief">
+  Document Object Model
+</div>
+
+<br>
+
+<div class="concept-description">
+  <p>DOM is the tree-like structure of a page.  The tree is organized into <em>parent</em>and 
+      <em>child</em> nodes.  The DOM tree is upside down with root at the top and branches underneath. </p>
+</div>
+
+<br>
+
+<div class="concept" id="lesson-2-3">
+ CSS
+</div>
+
+<div class="concept-brief">
+  Cascading Style Sheets
+  </div>
+
+<br>
+
+<div class="concept-description"><p>CSS is the style language.  The look and formatting of a document are determined using CSS.</p>
+</div>
+
+<br>
+
+<div class="concept" id="lesson-2-4">
+  Key point
+</div>
+
+ <div class="concept-description">
+   <p>Chrome shows the developers tool! Click on the the 3 bars on the top right of the <a href="www.google.com/chrome/">Chrome</a> tool bar. Then click tools and developers tools.  <b>Viola</b> the tree is displayed! Being a novice I thought this was pretty cool.  The tree is displayed on the left and the CSS language on right.</p>    
+   </div>
+  <!--Stage 1 work session 2 notes -->
+  <div class="lesson">
+    <h4 id="lesson-3">Lesson 3: Adding CSS style to HTML structure</h4>
+</div>
+<div class="concept" id="lesson-3-1">
+  Spaces Matter!
+</div>
+
+ <div class="concept-brief">
+   Spaces Matter!
+</div>
+
+<br>
+
+<div class="concept-description">
+  <p>This may seem like repetition to someone else reading, but this was my first major mistake.  I was driven batty for a bit until I figured out I had too many spaces.  So <b>Spaces Matter.</b>
+  .description { color : red; } will not work if there is an extra <b>space</b>.  Spaces Matter. </p>
+</div>
+
+<br>
+
+<div class="concept" id="lesson-3-2">
+  Search and Replace
+</div>
+
+ <div class="concept-brief">
+   CSS is the find a replace of coding. 
+</div>
+
+<br>
+
+ <div class="concept-description">
+  <p>Breaking CSS down into the simplest understanding; a class of the element is entered, how it should be styled is setup, then CSS will match the formatting for other elements with the same class.</p>
+</div>
+
+<br>
+
+<div class="concept" id="lesson-3-3">
+  Order Matters
+</div>
+
+<div class="concept-brief">
+  Order and rules go together in code much like they go together in life.
+</div>
+
+<br>
+
+<div class="concept-description">
+  <p>Styles are defined in different places.</p> 
+</div>
+ <div class="concept-list">
+   <ol>
+    <li>Browser default style</li>
+    <li>Stylesheet in a separate file.</li>
+    <li>Sytlesheet inside the HTML file</li>
+    <li>Inline with the element</li>
+   </ol> 
+</div>     
+            
+<div class="concept" id="lesson-3-4">
+  Specifics Matter
+</div>
+
+<div class="concept-brief">
+ Inheritance
+</div>
+
+<br>
+
+<div class="concept-description">
+  <p>With inheritance, styles are applied to a specific element (parent) and its descendants (child). This helps alleviate repetition in code.  An important note, descendants inherit text related properties, but not box properties.</p>
+</div>
+
+<br>
+
+<div class="concept" id="lesson-3-5">
+  Repetition
+</div>
+
+<div class="concept-brief">
+ Don't make me repeat myself
+</div>
+
+<br>
+
+<div class="concept-description">
+  <p>Repetition is bad, using CSS to avoid it is good. CSS allow the program writer to have a consistent style without constant repetition.  This is accomplished by linking a CSS style sheet to the HTML document.</p>
+</div>
+
+<br>
+
+<div class="concept" id="lesson-3-6">
+  Code, Test, Refine
+</div>
+
+<div class="concept-brief">
+  If at first you don't succeed...
+</div>
+
+<br>
+
+<div class="concept-description">
+    <p>Basic steps in coding:</p>
+</div>
+
+ <div class="concept-list">
+  <ol>
+   <li>Look for the boxes</li>
+   <li>Look for repeats; style and semantic elements</li>
+   <li>Write HTML</li>
+   <li>Apply styles from biggest to smallest</li>
+   <li>Fix what's broken</li>
+  </ol>
+</div>
+<div class="concept-description">
+ <p>Code comments in CSS begin with /* and end with */.</p>
+</div>
+
+<br>
+  
+<div class="concept" id="lesson-3-7">
+  It's all about the BOX
+</div>
+ <div class="concept-brief">
+  And how it fits inside
+</div>
+
+<br>
+
+ <div class="concept-description">
+   <p>Width of the box is left border, left padding, width of content, right padding and right border. This can be a challenge to keep recalculating, so we have border box (*{box-sizing: border-box;}) Border box includes border and padding and adjusts as necessary. No matter how you change the border and padding the size of the box stays the same.  The margin is not included.  I never did figure out how to change the margin.  I was not able to edit in dev tools, so if you are reading this and could give me some guidance it would be greatly appreciated, I figure it will be important later. </p>
+</div>
+ 
+<div class="concept-description">
+  <p>Not all browsers understand border box since it is relatively new.  Specific browser prefixes need to be included. <br>
+        *{
+<div class="concept-list">
+ -webkit- box-sizing:  border-box;<br>
+ -moz- box-sizing:  border-box;<br>
+ -ms- box-sizing:  border-box;<br>
+ box-sizing:  border-box;
+} <br>
+        </div>
+       
+  </div><br>
+  <div class="concept-brief">
+    Key points about box sizing
+</div>
+
+<br>
+
+ <div class="concept-description">
+   <p>Each HTML element is a box with 4 components, seems like geometry to me.  Since there are so
+        many components to juggle, it can be challenging to get the size of the box just right.  Boxes can be set to a percent rather than pixels, or use border-box.  
+        </p>
+</div>
+
+<br>
+
+<div class="concept-brief">
+  Box positioning
+</div>
+
+<br>
+
+<div class="concept-description">
+  <p> Divs are block elements and will take up the entire width of a page.  Adding the rule display: flex; will allow divs to appear next to each other. </p>
+</div>
+
+<br>
+
+<div class="concept" id="lesson-3-8">
+  Check your work!
+</div>
+
+<br>
+
+<div>
+      <a href="//validator.w3.org/#validate_by_input">HTML</a><br>
+      <a href="//jigsaw.w3.org/css-validator/#validate_by_input">CSS</a>
+      </div>
+      <!--says don't need doc type <!DOCTYPE html> maybe this is where it is failing, 
+submitting again</HTML> -->  
+<!--Stage 2 work session 1 notes -->
+ <div class="lesson" id="lesson-4">
+    <h4>Lesson 4: Introduction to serious programming</h4>
+</div>
+
+<div class="concept" id="lesson-4-1"> 
+  Telling computers what to do
+</div>
+
+ <div class="concept-brief">
+   You are the boss!
+</div>
+
+<br>
+
+ <div class="concept-description">
+  <p>Computers are fast, like Superman fast, and they can do any computation, if you tell         them how.  This instruction is done by programming.  Computers follow the instructions          given in the code provided.</p>
+</div>
+
+<br>
+
+<div class="concept" id="lesson-4-2"> 
+ Thinking like a Programmer
+</div>
+
+<div class="concept-brief">
+  Elements of programmer thinking
+</div>
+
+<br>
+
+<div class="concept-description">
+  <p><b>Procedural thinking</b> is inherent in thinking like a programmer.  Procedural thinking
+     is understanding that computer will follow the instructions of the code written.  
+       </p>
+</div>
+
+<div class="concept-description">
+  <p><b>Technological empathy</b> is the understanding of how programs and computers work.  Code can be written in a code, like Python, and put in another program that acts as a Python translator.  This in turn tells the computer what to do.</p>
+</div>
+
+<div class="concept-description">
+  <p><b>Abstract thinking</b> is understanding things that seem different are actually the same.  <em>The same but different</em>.  In class the examples of Python, a Python interpreter         and a web browser are the same. </p>
+</div>
+
+ <div class="concept-description">
+   <p><b>Debugging</b> is troubleshooting.  Find the error and correct it.</p>
+</div>
+<br>
+
+<div class="concept" id="lesson-4-3">
+ Python
+</div>
+
+<div class="concept-brief">
+  A programming language
+</div>
+
+<br>
+
+<div class="concept-description">
+  <p>Python is a language used to communicate with computers.  The are several reasons a known
+     language, like English, is not used.  Computers need a language that are not ambiguous, verbose or have different grammar rules.  The grammar used in Python comes from Backus-naur form, an early programming language used in the 50's.  Python follows the &lt;non-terminal&gt; -> replacement(terminal) format. The rules of a non-terminal are followed until a terminal is reached, then  on to the next non-terminal until only terminals are left.  This is called a derivation. # Denotes a comment in Python.</p>
+  </div>
+
+  <div class="concept-description">
+    <p>Python uses expressions. Examples of Python grammar for arithmetic expressions are: <br><br>
+      Expression-> expression operator expression (recursive definition)<br>
+      Expression-> number<br>
+      Operator-> +<br>
+      Operator-> *<br>
+      Number-> 0,1,2...      
+       </p>
+    </div>
+
+<br>
+
+<!--Stage 2 work session 2 notes -->
+
+<div class="concept" id="lesson-4-4">
+    Computer Programming
+</div>
+<div class="concept-brief">
+  Tell me what to do!
+</div>
+
+<div class="concept-description">
+  <p>Computer programming is telling a computer what should be done and how to do it.  A programmer will write a set of instructions, known as a program, in a language a computer understands that will be executed by the computer. Without a program to tell a computer what to do; a computer becomes a nice doorstop.</p>  
+  </div>
+ 
+ <div class="concept" id="lesson-4-5">
+    Variables in Python
+</div>
+<div class="concept-brief">
+  What's in a name
+</div>
+
+<br>
+
+<div class="concept-description">
+  <p>In Python, variables are assignment statements.  Assigning a value to a variable gives it a definition or an assignment.  Variables can be also be changed.  It has been named!  This name can be letters or numbers, it just needs to start with a letter or underscore.  For example: cheese_is_good = 'yummy' is a variable.</p>  
+   <br>
+   <blockquote>cheese_is_good = 'yummy' <br>
+   print 'hello ' + cheese_is_good + '!' <br>
+   hello yummy!</blockquote> 
+  <p> The = sign used in Python does not mean equal (see not all things are created equal...). The
+    equals (=) in Python indicates an assignment.  Think of it as an -> vs. =. Variables very useful for programmers; code readability is improved, value of important data can be stored, and they can be used to change the value of something.  The variable days = 8, can be change by using days = days-1.  We would get 7 days!
+ </div>  
+        
+  <br>
+        
+  <div class="concept" id="lesson-4-6">
+   Strings in Python
+</div>
+<div class="concept-brief">
+  Big Ball of Strings
+</div>
+
+<br>
+
+<div class="concept-description">
+  <p>A String is a sequence of characters Surrounded by '' or "".  If a string begins with ' it must end with ', and if it begins with " it must end with ".  Using the + symbol with strings means concatenation.  
+   <br>
+   name = 'Crystal' <br>
+   print 'hello ' + name + '!' <br>
+   hello Crystal! </p>
+  <p> Numbers and strings cannot be used together, an error will be produced since they are 
+    different objects.
+    <br>
+    print 'hello ' + 9 <br>
+    cannot concatenate 'str' and 'int' objects  (AKA does not compute)<br>
+    However, strings can be multiplied.  
+    <br>
+    name = 'Crystal' <br>
+    print 'hello ' + name + '!' * 3 <br>
+    hello Crystal!!! </p>
+ </div>      
+  
+ <br>
+ <div class="concept" id="lesson-4-7">
+    Indexing Strings
+</div>
+<div class="concept-brief">
+  Dewey's got nothing on Python!
+</div>
+
+<br>
+
+<div class="concept-description">
+  <p>Subsequences can be extracted from strings by using [] and numbers inside.  Subsequences can be single or multiple characters.  A multiple character string will start at the first number inside the brackets and stop at -1, which is the last character minus 1.    </p>  
+     <blockquote>&lt;string&gt;[&lt;expression&gt;] --> one character string, expression is a number<br>
+     &lt;string&gt;[&lt;expression&gt;:&lt;expression&gt;] --> multiple character string
+     </blockquote><br>
+</div>  
+
+<br>        
+ 
+<div class="concept" id="lesson-4-8">
+    Finding Strings in Strings
+</div>
+<div class="concept-brief">
+  Are we tangled up yet?
+</div>  
+
+ <br>
+ 
+ <div class="concept-description">
+  <p>Find is a built in procedure defined by Python.  The output of find is a number that gives the first position in the search string where the target string appears. An output of -1 means the string was not found. </p>  
+     <blockquote>&lt;string&gt;.find (&lt;string&gt;)</blockquote> <br>
+</div> 
+  
+<br>
+        
+<!--Concept and concept briefs were created and pasted from Python starting with Decisions and
+ending with Equality comparisons.  All other HTML was done manually. 
+def generate_concept_HTML(concept, concept_brief):
+    html_text_1 = '''
+<div class="concept">
+      ''' + concept
+    html_text_2 = '''
+    </div>
+    <div class="concept-brief">
+        ''' + concept_brief
+    html_text_3 = '''
+
+</div>'''
+    full_html_text = html_text_1 + html_text_2 + html_text_3
+    return full_html_text
+
+def make_HTML(concept_list):
+    concept = concept_list[0]
+    concept_brief = concept_list[1]
+    return generate_concept_HTML(concept, concept_brief)
+
+EXAMPLE_LIST_OF_CONCEPTS = [ ['Decisions and Repetitions', 'Easy Peasy'],
+                             ['If and While', 'What Else'],
+                             ['Equality Comparisons', 'True or False'] ]
+
+
+def make_HTML_for_many_concepts(list_of_concepts):
+    HTML = ""
+    for concept in list_of_concepts:
+        concept_HTML = make_HTML(concept)
+        HTML = HTML + concept_HTML
+    return HTML
+
+print make_HTML_for_many_concepts(EXAMPLE_LIST_OF_CONCEPTS)
+ -->      
+<div class="concept" id="lesson-4-9">
+      Decisions and Repetitions
+    </div>
+    <div class="concept-brief">
+        Easy Peasy
+    </div>
+
+    <br>
+<div class="concept-description">
+  <p>Python can be used for decision making; math, equality comparisons and if and while statements.  It can also be used to automate processes.  Python is useful in coding as it allows the coder create Python functions to eliminate repetition in writing code.</p>
+  <p>Functions in programming take an input, apply given parameters and produce an output. Functions are written to perform a certain task.  Functions allow code to be written in smaller steps.  A function will perform the defined task multiple times without having to be rewritten. </p> 
+  <p> Functions are started with the keyword <b>def</b> followed by a name and parameters in parentheses.  Calling a function means the computer is being instructed to perfrom the task defined within the function. A function needs a return statement in order to know what output to produce.</p><br>
+  Making a Function<br>
+  def square(x):
+  <blockquote>answer = x * x</blockquote>
+  <blockquote>return answer</blockquote><br>
+  Using a Function<br>
+  print square(4)<br>
+  16<br>
+
+  <br>
+  Python operators are: &lt;&gt; and &lt;=.     
+</div> 
+
+<br>
+
+<div class="concept" id="lesson-4-10">
+      If and While
+    </div>
+    <div class="concept-brief">
+        What Else
+    </div>
+
+  <br>
+
+  <div class="concept-description">
+    <p>If, while and else statements apply conditions and help Python make decisions.  Indentation is important! Or statements can also be used in Python.  With an or statement if the first expression evaluates to true, the second value is not considered.  If the first is false then the value of or is the second expression.</p>
+    def bigger(a,b);
+    <blockquote> if a>b:</blockquote>
+    <blockquote>&nbsp;&nbsp;return a</blockquote>
+    <blockquote>else:</blockquote>
+    <blockquote>&nbsp;&nbsp;return b</blockquote>
+    print bigger(2,7)
+    <blockquote>7</blockquote>
+
+  </div> 
+
+<br>
+
+<div class="concept" id="lesson-4-11">
+      Equality Comparisons
+    </div>
+    <div class="concept-brief">
+        True or False
+    </div>
+
+<br>
+
+<div class="concept-description">
+  <p> Typically when comparing two values in Python they should be the same type; integers with integers, strings with strings.  However, two different values can be compared.  For comparisons, Python uses the Boolean value: true or false. The symbol for equals in Python is ==, a single equal sign is used to define variables so the double must for used.  The symbol for not equal is !=. </p>
+  <br>
+  print 2 &lt; 3<br>
+        <blockquote>True </blockquote><br>
+  print 21 &lt; 3 <br>
+        <blockquote>False</blockquote><br>
+  print 7 * 3 == 21<br>
+        <blockquote>True</blockquote><br>
+  print 7 * 3 !=21<br>
+        <blockquote>False</blockquote><br>
+
+</div> 
+
+<br>
+
+ <div class="concept" id="lesson-4-12">
+      Loops
+    </div>
+    <div class="concept-brief">
+        Patented Infinity Loop!
+    </div>
+
+<br>
+
+<div class="concept-description">
+  <p> While is used to execute an unlimited times as long as the test expression is true.  Once the false criteria is met, Python moves on to the next instruction.  If there are no more instructions the loop will end.  A break statement can be inserted to stop the loop even when the test conditions are true enabling it to move to the next instruction.</p>   
+  <br>
+  while &lt;test expression&gt;:
+      <blockquote>&lt;code&gt; </blockquote>
+      <blockquote>if &lt;breaktest&gt;</blockquote>
+      <blockquote>&nbsp;&nbsp;break</blockquote>
+      <blockquote>&lt;more code&gt; </blockquote>
+</div>
+
+<br>
+
+<div class="concept" id="lesson-4-13">
+      Debugging
+    </div>
+    <div class="concept-brief">
+        No spray needed!
+    </div>
+
+<br>
+
+<div class="concept-description">
+      <p>Debugging Strategy:</p>
+</div>
+
+ <div class="concept-list">
+  <ol>
+   <li>Examine error messages, read backward from the last traceback</li>
+   <li>Use example code and substitute</li>
+   <li>Make sure the example works first!</li>
+   <li>Use print for immediate results</li>
+   <li>Keep and compare old versions</li>
+  </ol>
+</div>
+<!--all HTML passes validity test up to this point-->
+
+<!--Python code used.  This seems too cumbersome for creating the concept description piece, as it will be longer than a couple of lines.  It may just be easier to use Python to create the div for the concept description, then build the rest.  Just my thinking.  Also, this was hard, and while it works I still am fuzzy.  I bombed most of the class quizzes, I would get close or have the idea of what needed to happen, just not the ability to execute. More practice maybe??  More smaller practice pieces gradually building to larger problems???  It would help me build confidence, I have been ready to quit this week. 
+
+def generate_concept_HTML(concept, concept_brief, concept_description):
+    html_text_1 = '''
+<div class="concept">
+      ''' + concept
+    html_text_2 = '''
+    </div>
+
+    <div class="concept-brief">
+        ''' + concept_brief
+    html_text_3 = '''
+    </div>
+
+<div class="concept-description">
+      ''' + concept_description
+    html_text_4 = '''
+</div>'''
+
+    full_html_text = html_text_1 + html_text_2 + html_text_3 + html_text_4
+    return full_html_text
+
+def make_HTML(concept_list):
+    concept = concept_list[0]
+    concept_brief = concept_list[1]
+    concept_description = concept_list [2]
+    return generate_concept_HTML(concept, concept_brief, concept_description)
+
+EXAMPLE_LIST_OF_CONCEPTS = [ ['Structured Data', 'Lists and strings',
+                              'Strings and lists are both types of structured data.'],
+                             ['Mutation', 'Alien DNA',
+                             'Mutations are supported by lists but not strings.'],
+                             ['Aliasing', 'A Rose by any other name',
+                               'Aliasing is two different ways to refer to the same object'] ]
+
+
+def make_HTML_for_many_concepts(list_of_concepts):
+    HTML = ""
+    for concept in list_of_concepts:
+        concept_HTML = make_HTML(concept)
+        HTML = HTML + concept_HTML
+    return HTML
+
+print make_HTML_for_many_concepts(EXAMPLE_LIST_OF_CONCEPTS) -->
+
+<div class="concept">
+      Structured Data
+    </div>
+
+    <div class="concept-brief">
+        Lists and strings
+    </div>
+
+<div class="concept-description">
+      Strings and lists are both types of structured data.
+</div>
+<div class="concept">
+      Mutation
+    </div>
+
+    <div class="concept-brief">
+        Alien DNA
+    </div>
+
+<div class="concept-description">
+      Mutations are supported by lists but not strings.
+</div>
+<div class="concept">
+      Aliasing
+    </div>
+
+    <div class="concept-brief">
+        A Rose by any other name
+    </div>
+
+<div class="concept-description">
+      Aliasing is two different ways to refer to the same object
+</div>
+<!--all HTML passes validity test up to this point-->
+</body>
+</HTML>
